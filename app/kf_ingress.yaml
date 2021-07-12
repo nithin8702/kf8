@@ -103,7 +103,7 @@ spec:
       - args:
         - --ingress-class=alb
         - --cluster-name=eksworkshop-eksctl
-        - --aws-vpc-id=vpc-021f1bfad35f2afa8
+        - --aws-vpc-id=vpc-00691494b2c382d10
         - --aws-region=us-east-1
         image: docker.io/amazon/aws-alb-ingress-controller:v1.1.5
         imagePullPolicy: Always
