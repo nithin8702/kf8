@@ -66775,7 +66775,7 @@ data:
                         "host": "ml-pipeline-visualizationserver",
                         "trafficPolicy": {
                             "tls": {
-                                "mode": "ISTIO_MUTUAL"
+                                "mode": "DISABLE"
                             }
                         }
                     }
@@ -72315,7 +72315,7 @@ spec:
   host: '*.knative-serving.svc.cluster.local'
   trafficPolicy:
     tls:
-      mode: ISTIO_MUTUAL
+      mode: DISABLE
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -72328,7 +72328,7 @@ spec:
   host: metadata-grpc-service.kubeflow.svc.cluster.local
   trafficPolicy:
     tls:
-      mode: ISTIO_MUTUAL
+      mode: DISABLE
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -72343,7 +72343,7 @@ spec:
   host: ml-pipeline.kubeflow.svc.cluster.local
   trafficPolicy:
     tls:
-      mode: ISTIO_MUTUAL
+      mode: DISABLE
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -72356,7 +72356,7 @@ spec:
   host: minio-service.kubeflow.svc.cluster.local
   trafficPolicy:
     tls:
-      mode: ISTIO_MUTUAL
+      mode: DISABLE
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -72369,7 +72369,7 @@ spec:
   host: mysql.kubeflow.svc.cluster.local
   trafficPolicy:
     tls:
-      mode: ISTIO_MUTUAL
+      mode: DISABLE
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -72384,7 +72384,7 @@ spec:
   host: ml-pipeline-ui.kubeflow.svc.cluster.local
   trafficPolicy:
     tls:
-      mode: ISTIO_MUTUAL
+      mode: DISABLE
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -72399,7 +72399,7 @@ spec:
   host: ml-pipeline-visualizationserver.kubeflow.svc.cluster.local
   trafficPolicy:
     tls:
-      mode: ISTIO_MUTUAL
+      mode: DISABLE
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: EnvoyFilter
